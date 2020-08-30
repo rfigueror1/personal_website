@@ -29,4 +29,4 @@ app.use(express.static(__dirname + '/../dist'));
 // });
 
 
-app.listen(3004);
+app.listen(process.env.PORT || 5000);
