@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper:{
     width: 600,
-    height: 400
+    height: 500
   },
 
   projectThumbnail: {
@@ -40,6 +40,9 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 100
   },
 
+  button: {
+    color: theme.palette.primary.contrastText
+  },
   table: {
     width: 200
   },

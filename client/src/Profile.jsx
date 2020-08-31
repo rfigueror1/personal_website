@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import Container from '@material-ui/core/Container';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -13,6 +14,7 @@ import * as data from './../../resumeData.jsx';
 import useStyles from './styles.jsx'
 import Slide from '@material-ui/core/Slide';
 import Example from './Carousel.jsx'
+import Technologies from './Technologies.jsx'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -47,19 +49,32 @@ export default function Profile(props) {
 
   const classes = useStyles();
 
-
-
   return (
     <React.Fragment>
       <CssBaseline />
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Typography variant="h2">{data.default.main.name}</Typography>
-            <FacebookIcon className={classes.icon}/>
-            <LinkedInIcon className={classes.icon}/>
-            <TwitterIcon className={classes.icon}/>
-            <GitHubIcon className={classes.icon} href={data.default.main.social[0].url}/>
+            <Typography variant="h4">{data.default.main.name}</Typography>
+            <a href={data.default.main.social[0].url}>
+              <FacebookIcon className={classes.icon}/>
+            </a>
+            <a href={data.default.main.social[2].url}>
+              <LinkedInIcon className={classes.icon}/>
+            </a>
+            <a href={data.default.main.social[1].url}>
+              <TwitterIcon className={classes.icon}/>
+            </a>
+            <a href={data.default.main.social[3].url}>
+              <GitHubIcon className={classes.icon} href={data.default.main.social[0].url}/>
+            </a>
+            <a href='ricardofigueroaresume_2020.pdf' target="_blank" rel="noopener noreferrer" download>
+               <Button ariant="contained" className={classes.button}>
+                  <i className="fas fa-download"/>
+                  Download Resume
+               </Button>
+            </a>
+          <Typography variant="body1">{data.default.main.phone}</Typography>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
@@ -67,8 +82,9 @@ export default function Profile(props) {
       <Container className={classes.container}>
           <CardMedia className={classes.card}>
             <img className={classes.images} src={data.default.main.image} alt="recipe thumbnail"/>
-            <Typography variant="h4" className={classes.text}>{data.default.main.bio} </Typography>
+            <Typography variant="h6" className={classes.text}>{data.default.main.bio} </Typography>
           </CardMedia>
+          <Technologies skills={data.default.resume.skills}/>
           <Example/>
       </Container>
     </React.Fragment>

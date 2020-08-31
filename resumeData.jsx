@@ -1,9 +1,10 @@
 export default {
   "main": {
-    "name":"Hello, I'm Ricardo Figueroa, Software Engineer",
+    "name":"Hello, I'm Ricardo Figueroa",
     "image":"https://propertyimagesvesta.s3.amazonaws.com/images/ricardo_figueroa_picture.jpg",
-    "bio":"Easy going, but highly driven.",
+    "bio":"I'm a software engineer based in the San Francisco Bay Area specializing in building higly scalable web applications, websites, and innovative tech.",
     "contactmessage":"Please contact me buy sending a message.",
+    "techdesc": "I enjoy creating tech that solves complex issues. and I am always searching for the most efficient way to do it. Here are a few technologies I've been working with recently:",
     "email": "rfigueror@gmail.com",
     "phone": "+1(628)251-1329",
     "address":{
@@ -70,43 +71,43 @@ export default {
     "skills":[
       {
         "name":"Python",
-        "level":"80%"
+        "level":"80"
       },
       {
         "name":"Javascript",
-        "level":"60%"
+        "level":"60"
       },
       {
         "name":"ReactJs",
-        "level":"60%"
+        "level":"60"
       },
       {
         "name":"CSS",
-        "level":"60%"
+        "level":"60"
       },
       {
         "name":"HTML5",
-        "level":"80%"
+        "level":"80"
       },
       {
         "name":"Kubernetes",
-        "level":"50%"
+        "level":"50"
       },
       {
         "name":"MongoDB",
-        "level":"80%"
+        "level":"80"
       },
       {
         "name":"PostgreSQL",
-        "level":"80%"
+        "level":"80"
       },
       {
         "name":"AWS",
-        "level":"60%"
+        "level":"60"
       },
       {
         "name":"Google Cloud",
-        "level":"60%"
+        "level":"60"
       },
     ]
   },
