@@ -24,20 +24,21 @@ const useStyles = makeStyles(theme => ({
     margin: 25
   },
   paper:{
-    width: 600,
-    height: 500
+    width: 1000,
+    margin: 100
   },
 
   projectThumbnail: {
-      maxWidth: 500,
-      maxHeight: 500,
+      maxWidth: 600,
+      maxHeight: 600,
       borderRadius: 50
   },
 
   icon:{
     fontSize: 'large',
     margin: 20,
-    maxWidth: 100
+    maxWidth: 100,
+    color: theme.palette.primary.contrastText
   },
 
   button: {
@@ -52,11 +53,22 @@ const useStyles = makeStyles(theme => ({
     background: theme.palette.primary.main,
     color: 'white'
   },
-  title: {
-    background: theme.palette.secondary.main,
-    color: 'white',
-    width: 400
+  description:{
+    marginTop: 30,
+    marginBottom: 30
+  },
+  technologyGrid: {
+    width: 10,
+    marginRight: 100
+  },
+  tech_subtitle:{
+    backgroundColor: theme.palette.primary.light,
+    color: theme.palette.primary.contrastText
+  },
+  container_carousel: {
+    height: 600
   }
+
 }));
 
 export default useStyles

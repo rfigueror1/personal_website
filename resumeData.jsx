@@ -2,11 +2,11 @@ export default {
   "main": {
     "name":"Hello, I'm Ricardo Figueroa",
     "image":"https://propertyimagesvesta.s3.amazonaws.com/images/ricardo_figueroa_picture.jpg",
-    "bio":"I'm a software engineer based in the San Francisco Bay Area specializing in building higly scalable web applications, websites, and innovative tech.",
+    "bio":"I'm a software engineer based in the San Francisco Bay Area.",
     "contactmessage":"Please contact me buy sending a message.",
     "techdesc": "I enjoy creating tech that solves complex issues. and I am always searching for the most efficient way to do it. Here are a few technologies I've been working with recently:",
     "email": "rfigueror@gmail.com",
-    "phone": "+1(628)251-1329",
+    "phone": "+1 (628) 251-1329",
     "address":{
       "street":"2824 Marlborough Avenue",
       "city":"Redwood City",
@@ -71,70 +71,122 @@ export default {
     "skills":[
       {
         "name":"Python",
-        "level":"80"
+        "type": "programming_language",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/python.svg"
       },
       {
         "name":"Javascript",
-        "level":"60"
+        "type": "programming_language",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/jss.svg"
       },
       {
-        "name":"ReactJs",
-        "level":"60"
+        "name":"React",
+        "type": "front_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/react.svg"
       },
       {
         "name":"CSS",
-        "level":"60"
+        "type": "programming_language",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/css-3.svg"
       },
       {
         "name":"HTML5",
-        "level":"80"
+        "type": "programming_language",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/html-5.svg"
       },
       {
         "name":"Kubernetes",
-        "level":"50"
+        "type": "devOps",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/kubernetes.svg"
       },
       {
         "name":"MongoDB",
-        "level":"80"
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/mongodb.svg"
       },
       {
         "name":"PostgreSQL",
-        "level":"80"
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/postgresql.svg"
       },
       {
         "name":"AWS",
-        "level":"60"
+        "type": "devOps",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/aws.svg"
       },
       {
-        "name":"Google Cloud",
-        "level":"60"
+        "name":"Google Cloup Platform",
+        "type": "devOps",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/google-cloud-platform.svg"
+      },
+      {
+        "name":"RabbitMQ",
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/rabbitmq.svg"
+      },
+      {
+        "name":"Node",
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/nodejs.svg"
+      },
+      {
+        "name":"Angular",
+        "type": "front_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/angular-icon.svg"
+      },
+      {
+        "name":"Cassandra",
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/cassandra.svg"
+      },
+      {
+        "name":"Docker",
+        "type": "devOps",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/docker.svg"
+      },
+      {
+        "name":"Kafka",
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/kafka.svg"
+      },
+      {
+        "name":"Redis",
+        "type": "back_end",
+        "file": "https://propertyimagesvesta.s3.amazonaws.com/images/tech_images/redis.svg"
       },
     ]
   },
   "portfolio":{
     "projects": [
-      {
-        "title":"Third Eye",
-        "category":"Content management system for e-commerce",
-        "image":"cmonsys.jpg"
-      },
-      {
-        "title":"DeliverIO",
-        "category":"Fleet management and route optimization web application",
-        "image":"fury-fighting-gear.jpg"
-      }
+        {
+            "name": "Third Eye",
+            "description": "Content Monitoring System for product on e-commerce websites",
+            "image": "https://propertyimagesvesta.s3.amazonaws.com/images/third_eye.png",
+            "url": ""
+        },
+        {
+            "name": "DeliverIO",
+            "description": "Fleet Route Management System (Optimal Routes)",
+            "image": "https://propertyimagesvesta.s3.amazonaws.com/images/deliverio.jpeg",
+            "url": ""
+        },
+        {
+            "name": "AES",
+            "description": "Automated Essay Scoring using NLP",
+            "image": "https://propertyimagesvesta.s3.amazonaws.com/images/aes1.jpeg",
+            "url": "https://drive.google.com/file/d/1cfYL-8xAUGy9QF6nheLAsoyQ1cjHaWVS/view?usp=sharing"
+        }
+
     ]
   },
-  "testimonials":{
-    "testimonials":[
+  "testimonials": [
       {
-        "text":"I have the pleasure of working with Ricardo for one year at ByPrice, it is rare to come across standout talent like him. His ability to juggle multiple projects was unlike any I’ve seen before, and also his solid knowledge about software engineering and business would be an asset to any company.",
+        "text":"\"I have the pleasure of working with Ricardo for one year at ByPrice, it is rare to come across standout talent like him. His ability to juggle multiple projects was unlike any I’ve seen before, and also his solid knowledge about software engineering and business would be an asset to any company.\"",
         "user":"Oswaldo Cruz, Data Engineer @ Wizeline"
       },
       {
-        "text":"I studied with Ricardo the Master in Computer Science at ITAM, Mexico. We teamed up in different subject's projects ie. we coded a compiler (Lexical. Syntax and Semantic Analyzer), and we created a multi-objective optimizer genetic algorithm, just a mention a few. After all the projects we've worked on, I can certify Ricardo's proficiency in many important CS concepts and hands-on experience solving complex coding projects.",
+        "text":"\"I studied with Ricardo the Master in Computer Science at ITAM, Mexico. We teamed up in different subject's projects ie. we coded a compiler (Lexical. Syntax and Semantic Analyzer), and we created a multi-objective optimizer genetic algorithm, just a mention a few. After all the projects we've worked on, I can certify Ricardo's proficiency in many important CS concepts and hands-on experience solving complex coding projects.\"",
         "user":"Tim Givois, Software Engineer @ Carta"
       }
     ]
-  }
 }

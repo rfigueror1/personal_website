@@ -14,11 +14,14 @@ import * as data from './../../resumeData.jsx';
 import useStyles from './styles.jsx'
 import Slide from '@material-ui/core/Slide';
 import Example from './Carousel.jsx'
+import Testimonials from './Testimonials.jsx'
 import Technologies from './Technologies.jsx'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import InfoCard from './InfoCard.jsx'
+
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -81,11 +84,11 @@ export default function Profile(props) {
       <Toolbar />
       <Container className={classes.container}>
           <CardMedia className={classes.card}>
-            <img className={classes.images} src={data.default.main.image} alt="recipe thumbnail"/>
-            <Typography variant="h6" className={classes.text}>{data.default.main.bio} </Typography>
+            <Typography variant="h1" className={classes.text}>{data.default.main.bio} </Typography>
           </CardMedia>
-          <Technologies skills={data.default.resume.skills}/>
-          <Example/>
+          <InfoCard title="Technologies" description={data.default.main.techdesc} content=<Technologies skills={data.default.resume.skills}/>/>
+          <InfoCard title="Projects" content={<Example/>}/>
+          <InfoCard title="Testimonials" content={<Testimonials/>}/>
       </Container>
     </React.Fragment>
   );
